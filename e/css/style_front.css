@@ -1,0 +1,1654 @@
+ @keyframes contAnimation2 {
+     0% {
+         opacity: 0;
+         transform: scale(0.3) translateY(-60px);
+     }
+     15% {
+         transform: scale(0.8);
+     }
+     100% {
+       opacity: 1;
+       transform: scale(1) translateY(0px);
+     }
+ }
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 374px) { 
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFF;
+        font-family: proxima-nova, sans-serif;
+    }
+    .headbanner {
+        width: 100%;
+        height: 450px;
+        background-color: #FFF;
+        background-position: 50% 50%;
+        overflow: hidden;
+    }
+    .headbanner img {
+        width: 120%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        left: -200px;
+        top: -50;
+    }
+    .container {
+        width: 100%;
+        margin: -450 auto 0;
+        /* background-color: #FFF; */
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    }
+    .overhead {
+        width: 100%;
+        overflow: auto;
+        /* height: 300px; */
+        /* background-color: #F0F0F0; */
+        border-bottom: 1px solid #CCC;
+        /* display: flex; */
+    }
+    .banner {
+        width: 100%;
+        height: 150px;
+        border-radius: 4px 0 0 0;
+        /* background-color: orange; */
+        text-align:center;
+        overflow: hidden;
+        /* flex: 1; */
+    }
+    .summary {
+        width: 90%;
+        height: 90px;
+        font-size: 12px;
+        padding: 5px 5%;
+        background-color: #F0F0F0;
+        /* border-radius: 0 4px 0 0; */
+        
+        /* float: left; */
+    }
+    .buyfijo {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        top: 0; /* required as well. */
+    }
+    .buyfijo form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buy {
+        width: 100%;
+        height: 70px;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        margin: 0 auto;
+        position: fixed;
+        top: 0; /* required as well. */
+        z-index: 90;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        -webkit-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+    }
+    .salesended {
+        width: 200px;
+        height: 100%;
+        /* background-color: red; */
+        color: #666;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido {
+        width: 100%;
+        min-height: 400px;
+        background-color: #FFF;
+        margin: 0 auto;
+        position: relative;
+        /* display: flex; */
+    }
+    .button_2 {
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+        
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_3 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 0px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_4 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #CCC;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* cursor: pointer; */
+    }
+    .button_5 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        padding: 10px 34px;
+        border-radius: 15px;
+        background: #FFF;
+        font-size: 13px;
+        text-align: center;
+        color: #999;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .description {
+        width: 90%;
+        overflow-y: auto;
+        /* text-align: justify; */
+        /* flex: 1; */
+        padding: 0 5%;
+        /* border-radius: 4px 0 0 0; */
+        /* background-color: orange; */
+    }
+    .sidebar_r {
+        width: 90%;
+        height: 160px;
+        background-color: #F0F0F0;
+        /* color:#FFF; */
+        /* margin: 0 0 60px 0; */
+        padding: 0 5%;
+        border-top:1px solid #CCC;
+        border-bottom:1px solid #CCC;
+        font-size: 12px;
+        /* border-radius: 0 4px 0 0; */
+        /* background-color: #F0F0F0; */
+        /* float: right; */
+        /* overflow: auto; */
+        /* display: none; */
+    }
+    .subform_cont1 {
+        width:100%;
+        height:100%;
+        /* background-image: url("../../img/sys/opacity_bg.png"); */
+        background-color: rgba(0, 0, 0, 0.856);
+        overflow: auto;
+        /* display: none; */
+        position: fixed;
+        z-index: 100;
+    }
+    .formulario {
+        width: 100%;
+        height: 78vh;
+        margin: 0 auto;
+        padding: 55px 0 0;
+        background-color: #FFF;
+        /* border: 1px solid #dddfeb; */
+        /* border-radius: 7px; */
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        display: flex;
+    }
+    .min_table {
+        margin: 0 auto;
+        overflow: auto;
+        /* background-color: rgb(241, 65, 34); */
+    }
+    .min_table_tr {
+        overflow: auto;
+        display: flex;
+    }
+    .min_table_td {
+        flex: 1;
+    }
+    .text_input {
+        width: 90%;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    /* .text_input_leng {
+         width: 350px;
+         margin: 5px 0;
+         padding: 12px 10px;
+         border-radius: 15px;
+         border: 1px solid rgb(84, 4, 231);
+         font-size: 12px;
+     } */
+    /* .text_input_select {
+         width: 340px;
+         margin: 5px 0;
+         padding: 12px 10px;
+         border-radius: 15px;
+         border: 1px solid rgb(84, 4, 231);
+         font-size: 12px;
+     } */
+    .ticket_lista {
+        flex: 1;
+        /* height:100vh; */
+        /* background-color: orange; */
+    }
+    .lista_header {
+        width: 100%;
+        background-color: #FFF;
+        text-align: center;
+        border-bottom:1px solid #CCC;
+        padding: 10px 0;
+        position: fixed;
+        top:0;
+        -webkit-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .lista_header h3 {
+        font-weight:200;
+        margin:8px 0;
+    }
+    .tickets_view {
+        width: 100%;
+        height: 78vh;
+        /* background-color: orange; */
+        margin: 0px;
+        overflow: auto;
+    }
+    .tickets_line {
+        width:80%;
+        overflow:auto;
+        /* background-color:orange; */
+        padding:15px 0;
+        margin:0 auto;
+        border-bottom: 1px solid #CCC;
+        display:flex;
+    }
+    .tickets_line_left {
+        flex:1;
+        padding: 0 10px;
+        float:left;
+    }
+    .tickets_line_right {
+        width: 25%;
+        height: 70px;
+        /* background-color: orange; */
+        padding: 20px 10px 0 0;
+        text-align: right;
+    }
+    .tickets_line_right img {
+        height: 60%;
+    }
+    .ticket_done {
+        width: 250px;
+        border: 4px solid #CCC;
+        border-radius: 7px;
+        text-align: center;
+        padding: 10px 10px 20px;
+        margin: 30px auto 0;
+        /* background-color:#CCC; */
+    }
+    .paypal {
+        width: 300px;
+        height: 340px;
+        border: 1px solid #FFF;
+        border-radius: 7px;
+        text-align: center;
+        margin: 30px auto 0;
+        padding: 30px 0;
+        /* background-color: indigo; */
+    }
+    .lista_foot {
+        width: 100%;
+        height: 74px;
+        background-color: #FFF;
+        border-top: 1px solid #CCC;
+        position: fixed;
+        bottom: 0;
+        -webkit-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .price_bubble {
+        /* width: 50px; */
+        /* background-color: rgb(250, 65, 9); */
+        color: #333;
+        font-size: 14px;
+        padding: 30px 30px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        /* display: none; */
+    }
+    .form_sidebar {
+        width: 270px;
+        height: 570px;
+        border-left: 1px solid #CCC;
+        display: none;
+    }
+    .small_banner {
+        width: 100%;
+        height:180px;
+        background-color: #666;
+        overflow: hidden;
+    }
+    .small_banner img {
+        width: 130%;
+    }
+    .flying_button {
+        width: 10px;
+        height: 30px;
+        margin-top: -10px;
+        margin-left: 290px;
+        padding: 0px 19px 10px 12px;
+        border-radius: 25px;
+        background-color: rgba(153, 153, 153, 0.26);
+        color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        font-size: 30px;
+        position: fixed;
+        transform: rotate(45deg);
+        transform-origin: bottom left;
+        cursor: pointer;
+    }
+    .flying_button:hover {
+        background-color: #666;
+        color: #000;
+    }
+    .carrito {
+        width: 100%;
+        height: 370px;
+        background-color: #F0F0F0;
+    }
+    .reminder {
+        flex: 1;
+        background-color: rgb(205, 221, 253);
+        color: rgb(1, 1, 165);
+        border: 4px solid rgb(1, 1, 165);
+        text-align: center;
+        padding: 20px 0 20px;
+        border-radius: 7px;
+        position: absolute;
+        z-index: 2;
+
+        -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+
+        animation: contAnimation2 0.3s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .reminder img {
+        width: 95%;
+    }
+    .foot_inicio {
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* opacity: 0.5; */
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width : 767px) and (min-device-height : 667px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFF;
+        font-family: proxima-nova, sans-serif;
+    }
+    .headbanner {
+        width: 100%;
+        height: 450px;
+        background-color: #FFF;
+        background-position: 50% 50%;
+        overflow: hidden;
+    }
+    .headbanner img {
+        width: 120%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        left: -200px;
+        top: -50;
+    }
+    .container {
+        width: 100%;
+        margin: -450 auto 0;
+        /* // background-color: #FFF; */
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    }
+    .overhead {
+        width: 100%;
+        overflow: auto;
+        /* // height: 300px; */
+        /* // background-color: #F0F0F0; */
+        border-bottom: 1px solid #CCC;
+        /* // display: flex; */
+    }
+    .banner {
+        width: 100%;
+        height: 180px;
+        border-radius: 4px 0 0 0;
+        /* // background-color: orange; */
+        text-align:center;
+        overflow: hidden;
+        /* // flex: 1; */
+    }
+    .summary {
+        width: 90%;
+        height: 90px;
+        font-size: 12px;
+        padding: 5px 5%;
+        background-color: #F0F0F0;
+        /* // border-radius: 0 4px 0 0; */
+        
+        /* // float: left; */
+    }
+    .buyfijo {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        top: 0; /* required as well. */
+    }
+    .buyfijo form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buy {
+        width: 100%;
+        height: 70px;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        margin: 0 auto;
+        position: fixed;
+        top: 0; /* required as well. */
+        z-index: 90;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        -webkit-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+    }
+    .salesended {
+        width: 200px;
+        height: 100%;
+        /* // background-color: red; */
+        color: #666;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido {
+        width: 100%;
+        min-height: 400px;
+        background-color: #FFF;
+        margin: 0 auto;
+        position: relative;
+        /* // display: flex; */
+    }
+    .button_2 {
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+        
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_3 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_4 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #CCC;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* // cursor: pointer; */
+    }
+    .button_5 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        padding: 10px 34px;
+        border-radius: 15px;
+        background: #FFF;
+        font-size: 13px;
+        text-align: center;
+        color: #999;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .description {
+        width: 90%;
+        overflow-y: auto;
+        /* // text-align: justify; */
+        /* // flex: 1; */
+        padding: 0 5%;
+        /* // border-radius: 4px 0 0 0; */
+        /* // background-color: orange; */
+    }
+    .sidebar_r {
+        width: 90%;
+        height: 160px;
+        background-color: #F0F0F0;
+        /* // color:#FFF; */
+        /* // margin: 0 0 60px 0; */
+        padding: 0 5%;
+        border-top:1px solid #CCC;
+        border-bottom:1px solid #CCC;
+        font-size: 12px;
+        /* // border-radius: 0 4px 0 0; */
+        /* // background-color: #F0F0F0; */
+        /* // float: right; */
+        /* // overflow: auto; */
+        /* // display: none; */
+    }
+    .subform_cont1 {
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.856);
+        overflow: auto;
+        /* // display: none; */
+        position: fixed;
+        z-index: 100;
+    }
+    .formulario {
+        width: 100%;
+        height: 86vh;
+        margin: 0 auto;
+        padding: 55px 0 ;
+        background-color: #FFF;
+        /* // border: 1px solid #dddfeb; */
+        /* // border-radius: 7px; */
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        display: flex;
+    }
+    .min_table {
+        margin: 0 auto;
+        overflow: auto;
+        /* // background-color: rgb(241, 65, 34); */
+    }
+    .min_table_tr {
+        overflow: auto;
+        display: flex;
+    }
+    .min_table_td {
+        flex: 1;
+    }
+    .text_input {
+        width: 90%;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    /* // .text_input_leng {
+    //     width: 350px;
+    //     margin: 5px 0;
+    //     padding: 12px 10px;
+    //     border-radius: 15px;
+    //     border: 1px solid rgb(84, 4, 231);
+    //     font-size: 12px;
+    // } */
+    /* // .text_input_select {
+    //     width: 340px;
+    //     margin: 5px 0;
+    //     padding: 12px 10px;
+    //     border-radius: 15px;
+    //     border: 1px solid rgb(84, 4, 231);
+    //     font-size: 12px;
+    // } */
+    .ticket_lista {
+        flex: 1;
+        /* // height:100vh; */
+        /* // background-color: orange; */
+    }
+    .lista_header {
+        width: 100%;
+        background-color: #FFF;
+        text-align: center;
+        border-bottom:1px solid #CCC;
+        padding: 10px 0;
+        position: fixed;
+        top:0;
+        -webkit-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .lista_header h3 {
+        font-weight:200;
+        margin:8px 0;
+    }
+    .tickets_view {
+        width: 100%;
+        height: 84vh;
+        /* // background-color: orange; */
+        margin: 0px;
+        overflow: auto;
+    }
+    .tickets_line {
+        width: 80%;
+        overflow: auto;
+        /* // background-color:orange; */
+        padding: 15px 0;
+        margin: 0 auto;
+        border-bottom: 1px solid #CCC;
+        display: flex;
+    }
+    .tickets_line_left {
+        flex:1;
+        padding: 0 10px;
+        float:left;
+    }
+    .tickets_line_right {
+        width: 20%;
+        height: 80px;
+        /* // background-color: orange; */
+        padding: 20px 10px 0 0;
+        text-align: right;
+    }
+    .tickets_line_right img {
+        height: 55%;
+    }
+
+    .ticket_done {
+        width: 250px;
+        border: 4px solid #CCC;
+        border-radius: 7px;
+        text-align: center;
+        padding: 10px 10px 20px;
+        margin: 55px auto;
+        /* // background-color:#CCC; */
+    }
+    .paypal {
+        width: 300px;
+        height: 340px;
+        border: 1px solid #FFF;
+        border-radius: 7px;
+        text-align: center;
+        margin: 30px auto 0;
+        padding: 30px 0;
+        /* // background-color: indigo; */
+    }
+    .lista_foot {
+        width: 100%;
+        height: 74px;
+        background-color: #FFF;
+        border-top: 1px solid #CCC;
+        position: fixed;
+        bottom: 0;
+        -webkit-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .price_bubble {
+        /* // width: 50px; */
+        /* // background-color: rgb(250, 65, 9); */
+        color: #333;
+        font-size: 14px;
+        padding: 30px 30px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        /* // display: none; */
+    }
+    .form_sidebar {
+        width: 270px;
+        height: 570px;
+        border-left: 1px solid #CCC;
+        display: none;
+    }
+    .small_banner {
+        width: 100%;
+        height:180px;
+        background-color: #666;
+        overflow: hidden;
+    }
+    .small_banner img {
+        width: 130%;
+    }
+    .flying_button {
+        width: 10px;
+        height: 30px;
+        margin-top: -10px;
+        margin-left: 290px;
+        padding: 0px 19px 10px 12px;
+        border-radius: 25px;
+        background-color: #999;
+        color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        font-size: 30px;
+        position: fixed;
+        transform: rotate(45deg);
+        transform-origin: bottom left;
+        cursor: pointer;
+    }
+    .flying_button:hover {
+        background-color: #666;
+        color: #000;
+    }
+    .carrito {
+        width: 100%;
+        height: 370px;
+        background-color: #F0F0F0;
+    }
+    .reminder {
+        flex: 1;
+        background-color: rgb(205, 221, 253);
+        color: rgb(1, 1, 165);
+        border: 4px solid rgb(1, 1, 165);
+        text-align: center;
+        padding: 20px 0 20px;
+        border-radius: 7px;
+        position: absolute;
+        z-index: 2;
+
+        -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+
+        animation: contAnimation2 0.3s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .reminder img {
+        width: 95%;
+    }
+    .foot_inicio {
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* opacity: 0.5; */
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFF;
+        font-family: proxima-nova, sans-serif;
+    }
+    .headbanner {
+        width: 100%;
+        height: 450px;
+        background-color: #FFF;
+        background-position: 50% 50%;
+        overflow: hidden;
+    }
+    .headbanner img {
+        width: 120%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        /* // left: -200px; */
+        top: -80;
+    }
+    .container {
+        width: 100%;
+        margin: -450 auto 0;
+        /* // background-color: #FFF; */
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    }
+    .overhead {
+        width: 100%;
+        /* // height: 300px; */
+        /* // background-color: #F0F0F0; */
+        border-bottom: 1px solid #CCC;
+        display: flex;
+    }
+    .banner {
+        height: 250px;
+        border-radius: 4px 0 0 0;
+        /* // background-color: orange; */
+        text-align:center;
+        overflow: hidden;
+        flex: 1;
+    }
+    .summary {
+        width: 200px;
+        /* // height: 300px; */
+        padding: 0 20px;
+        background-color: #F0F0F0;
+        border-radius: 0 4px 0 0;
+        float: left;
+    }
+    .buyfijo {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        top: 0; /* required as well. */
+    }
+    .buy {
+        width: 100%;
+        height: 70px;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        margin: 0 auto;
+        position: fixed;
+        top: 0; /* required as well. */
+        z-index: 90;
+        
+        -webkit-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+    }
+    .salesended {
+        width: 200px;
+        height: 100%;
+        /* // background-color: red; */
+        color: #666;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido {
+        width: 100%;
+        min-height: 400px;
+        background-color: #FFF;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+    .button_2 {
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+    }
+    .button_3 {
+        background: #d8420c;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin: 12px 15px;
+        border: 0;
+        border-radius: 15px;
+        float: right;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_4 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #CCC;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* // cursor: pointer; */
+    }
+    .button_5 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        padding: 10px 34px;
+        border-radius: 15px;
+        background: #FFF;
+        font-size: 13px;
+        text-align: center;
+        color: #999;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .description {
+        flex: 1;
+        padding: 0 60px;
+        border-radius: 4px 0 0 0;
+        /* // background-color: orange; */
+        overflow: auto;
+    }
+    .sidebar_r {
+        width: 200px;
+        margin: 0 0 60px 0;
+        padding: 0 20px;
+        border-radius: 0 4px 0 0;
+        /* // background-color: #F0F0F0; */
+        float: right;
+        overflow: auto;
+    }
+    .subform_cont1 {
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.856);
+        overflow: auto;
+        /* // display: none; */
+        position: fixed;
+        z-index: 100;
+    }
+    .formulario {
+        width: 95%;
+        height: 650px;
+        margin: 30px auto;
+        background-color: #FFF;
+        /* // border: 1px solid #dddfeb; */
+        /* // border-radius: 7px; */
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .min_table {
+        margin: 0 auto;
+        overflow: auto;
+        /* // background-color: rgb(241, 65, 34); */
+    }
+    .min_table_tr {
+        overflow: auto;
+        display: flex;
+    }
+    .min_table_td {
+        flex: 1;
+    }
+    .disc_input {
+        width: 70%;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 18px;
+    }
+    .text_input {
+        width: 90%;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    .text_input_leng {
+        width: 350px;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    .text_input_select {
+        width: 340px;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    .ticket_lista {
+        flex: 1;
+        height: 650px;
+        /* // background-color: orange; */
+    }
+    .lista_header {
+        width: 100%;
+        background-color: #FFF;
+        text-align: center;
+        border-bottom: 1px solid #CCC;
+        padding: 10px 0;
+        /* // position: fixed; */
+        /* // top:0; */
+        -webkit-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .lista_header h3 {
+        font-weight: 200;
+        margin: 6px 0;
+    }
+    .tickets_view {
+        width: 100%;
+        height: 505px;
+        overflow: auto;
+    }
+    /* // .tickets_view a {
+    //     color: rgb(45, 185, 250);
+    //     text-decoration: none;
+    // } */
+    .tickets_line {
+        width:80%;
+        overflow:auto;
+        /* // background-color:orange; */
+        padding:15px 0;
+        margin:0 auto;
+        border-bottom: 1px solid #CCC;
+        display:flex;
+    }
+    .tickets_line_left {
+        flex:1;
+        padding: 0 10px;
+        float:left;
+    }
+    .tickets_line_right {
+        width: 20%;
+        padding: 35px 10px 0 0;
+        text-align: right;
+    }
+    .tickets_line_right img {
+        height: 55%;
+    }
+    .ticket_done {
+        width: 250px;
+        border: 4px solid #CCC;
+        border-radius: 7px;
+        text-align: center;
+        padding: 10px 10px 20px;
+        margin: 55px auto;
+        /* // background-color:#CCC; */
+    }
+    .paypal {
+        width: 300px;
+        height: 340px;
+        border: 1px solid #FFF;
+        border-radius: 7px;
+        text-align: center;
+        margin: 30px auto 0;
+        padding: 30px 0;
+        /* // background-color: indigo; */
+    }
+    .lista_foot {
+        width: 100%;
+        height: 74px;
+        background-color: #FFF;
+        padding: 15px 0 0;
+        border-top: 1px solid #CCC;
+        -webkit-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .price_bubble {
+        width: 50px;
+        /* // background-color: rgb(250, 65, 9); */
+        color: #333;
+        font-size: 14px;
+        padding: 30px 30px;
+        position: fixed;
+        bottom: 63px;
+        left: 0px;
+        display: none;
+    }
+    .form_sidebar {
+        width: 300px;
+        height: 650px;
+        border-left: 1px solid #CCC;
+    }
+    .small_banner {
+        width: 100%;
+        height: 180px;
+        background-color: #666;
+        overflow: hidden;
+    }
+    .small_banner img {
+        width: 130%;
+        margin-left: -20%;
+    }
+    .flying_button {
+        width: 10px;
+        height: 30px;
+        margin-top: -10px;
+        margin-left: 240px;
+        padding: 0px 19px 10px 12px;
+        border-radius: 25px;
+        background-color: #999;
+        color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        font-size: 30px;
+        position: fixed;
+        transform: rotate(45deg);
+        transform-origin: bottom left;
+        cursor: pointer;
+    }
+    .flying_button:hover {
+        background-color: #666;
+        color: #000;
+    }
+    .carrito {
+        width: 100%;
+        height: 470px;
+        background-color: #F0F0F0;
+    }
+    .reminder {
+        width: 480px;
+        background-color: rgb(205, 221, 253);
+        color: rgb(1, 1, 165);
+        border: 4px solid rgb(1, 1, 165);
+        text-align: center;
+        padding: 20px 0 20px;
+        border-radius: 7px;
+        position: absolute;
+        z-index: 2;
+
+        -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+
+        animation: contAnimation2 0.3s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .reminder img {
+        width: 80%;
+    }
+    .foot_inicio {
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* opacity: 0.5; */
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFF;
+        font-family: proxima-nova, sans-serif;
+    }
+    .headbanner {
+        width: 100%;
+        height: 530px;
+        background-color: #FFF;
+        /* // background-position: 50% 50%; */
+        overflow: hidden;
+    }
+    .headbanner img {
+        width: 120%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        left: -200px;
+        top: -80;
+    }
+    .container {
+        width: 1008px;
+        margin: -450 auto 50px;
+        /* // background-color: #FFF; */
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    }
+    .overhead {
+        width: 100%;
+        /* // height: 300px; */
+        /* // background-color: #F0F0F0; */
+        border-bottom: 1px solid #CCC;
+        display: flex;
+    }
+    .banner {
+        height: 350px;
+        border-radius: 4px 0 0 0;
+        /* // background-color: orange; */
+        text-align: center;
+        overflow: hidden;
+        flex: 1;
+    }
+    .banner img {
+        position: relative;
+        top: -10%;
+        vertical-align: middle;
+    }
+    .summary {
+        width: 260px;
+        /* // height: 300px; */
+        padding: 0 20px;
+        background-color: #F0F0F0;
+        border-radius: 0 4px 0 0;
+        float: left;
+    }
+    .buyfijo {
+        width: 1008px;
+        height: 70px;
+        margin: 0 auto;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        top: 0; /* required as well. */
+    }
+    .buy {
+        width: 1008px;
+        height: 70px;
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        margin: 0 auto;
+        position: fixed;
+        top: 0; /* required as well. */
+        z-index: 90;
+        
+        -webkit-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 20px -4px rgba(0,0,0,0.2);
+    }
+    .salesended {
+        width: 200px;
+        height: 100%;
+        /* // background-color: red; */
+        color: #666;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido {
+        width: 100%;
+        min-height: 400px;
+        background-color: #FFF;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+    .button_2 {
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #d8420c;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+    }
+    .button_3 {
+        background: #d8420c;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin: 12px 15px;
+        border: 0;
+        border-radius: 15px;
+        float: right;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .button_4 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        border-radius: 15px;
+        background: #CCC;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* // cursor: pointer; */
+    }
+    .button_5 {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 12px 15px;
+        padding: 10px 34px;
+        border-radius: 15px;
+        background: #FFF;
+        font-size: 13px;
+        text-align: center;
+        color: #999;
+        border: 0;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        cursor: pointer;
+
+        -moz-appearance:inherit; 
+        -o-appearance:inherit;
+        -ms-appearance:inherit;
+        appearance:inherit;
+        -webkit-appearance:inherit;
+    }
+    .description {
+        flex: 1;
+        margin: 0 0 60px 0;
+        padding: 0 100px;
+        border-radius: 4px 0 0 0;
+        /* // background-color: orange; */
+        overflow: auto;
+    }
+    .sidebar_r {
+        width: 260px;
+        margin: 0 0 60px 0;
+        padding: 0 20px;
+        border-radius: 0 4px 0 0;
+        /* // background-color: #F0F0F0; */
+        float: right;
+        overflow: auto;
+    }
+    /* // #mapa {
+    //     width: 1008px;
+    //     height: 350px;
+    //     background-color: #dd5656;
+    // } */
+    .subform_cont1 {
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.856);
+        overflow: auto;
+        /* // display: none; */
+        position: fixed;
+        z-index: 100;
+    }
+    .formulario {
+        width: 900px;
+        height: 650px;
+        margin: 30px auto;
+        background-color: #FFF;
+        /* // border: 1px solid #dddfeb; */
+        /* // border-radius: 7px; */
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .min_table {
+        margin: 0 auto;
+        overflow: auto;
+        /* // background-color: rgb(241, 65, 34); */
+    }
+    .min_table_tr {
+        overflow: auto;
+        display: flex;
+    }
+    .min_table_td {
+        flex: 1;
+    }
+    .text_input {
+        width: 90%;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    .text_input_select {
+        width: 565px;
+        margin: 5px 0;
+        padding: 12px 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(84, 4, 231);
+        font-size: 12px;
+    }
+    .ticket_lista {
+        flex: 1;
+        height:650px;
+        /* // background-color: orange; */
+    }
+    .lista_header {
+        width: 100%;
+        text-align: center;
+        border-bottom:1px solid #CCC;
+        padding: 10px 0;
+        -webkit-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px 33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .lista_header h3 {
+        font-weight:200;
+        margin:8px 0;
+    }
+    .tickets_view {
+        width: 100%;
+        height: 520px;
+        overflow: auto;
+    }
+    /* // .tickets_view a {
+    //     color: rgb(45, 185, 250);
+    //     text-decoration: none;
+    // } */
+    .tickets_line {
+        width:80%;
+        overflow:auto;
+        /* // background-color:orange; */
+        padding:15px 0;
+        margin:0 auto;
+        border-bottom: 1px solid #CCC;
+        display:flex;
+    }
+    .tickets_line_left {
+        flex:1;
+        padding: 0 10px;
+        float:left;
+    }
+    .tickets_line_right {
+        width: 20%;
+        padding: 30px 10px 0 0;
+        text-align: right;
+    }
+    .tickets_line_right img {
+        height: 55%;
+    }
+    .ticket_done {
+        width: 300px;
+        border: 4px solid #CCC;
+        border-radius: 7px;
+        text-align: center;
+        padding: 10px 10px 20px;
+        margin: 55px auto;
+        /* // background-color:#CCC; */
+    }
+    .paypal {
+        width: 300px;
+        height: 340px;
+        border: 1px solid #FFF;
+        border-radius: 7px;
+        text-align: center;
+        margin: 50px auto 0;
+        padding: 30px 0;
+        /* // background-color: indigo; */
+    }
+    .lista_foot {
+        width: 100%;
+        height: 74px;
+        border-top: 1px solid #CCC;
+        -webkit-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+        box-shadow: 0px -33px 20px -5px rgba(0,0,0,0.03);
+    }
+    .price_bubble {
+        width: 50px;
+        /* // background-color: rgb(250, 65, 9); */
+        color: #333;
+        font-size: 14px;
+        padding: 30px 10px;
+        position: fixed;
+        bottom: 50px;
+        left: 100px;
+        display:none;
+    }
+    .form_sidebar {
+        width: 350px;
+        height:650px;
+        border-left: 1px solid #CCC;
+    }
+    .small_banner {
+        width: 100%;
+        height:180px;
+        background-color: #666;
+        overflow: hidden;
+    }
+    .small_banner img {
+        width: 100%;
+    }
+    .flying_button {
+        width: 10px;
+        height: 30px;
+        margin-top: -10px;
+        margin-left: 290px;
+        padding: 0px 19px 10px 12px;
+        border-radius: 25px;
+        background-color: #999;
+        color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        font-size: 30px;
+        position: fixed;
+        transform: rotate(45deg);
+        transform-origin: bottom left;
+        cursor: pointer;
+    }
+    .flying_button:hover {
+        background-color: #666;
+        color: #000;
+    }
+    .carrito {
+        width: 100%;
+        height: 470px;
+        background-color: #F0F0F0;
+    }
+    .reminder {
+        width: 550px;
+        background-color: rgb(205, 221, 253);
+        color: rgb(1, 1, 165);
+        border: 4px solid rgb(1, 1, 165);
+        text-align: center;
+        padding: 20px 0 20px;
+        border-radius: 7px;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+
+        -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+        box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.56);
+
+        animation: contAnimation2 0.3s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .reminder img {
+        width: 70%;
+    }
+    .foot_inicio {
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+        /* opacity: 0.5; */
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+}
